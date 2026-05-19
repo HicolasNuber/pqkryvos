@@ -111,7 +111,7 @@ Disk space
 
 The artifact is hosted in a public GitHub repository:
 
-https://github.com/<your-repo>/PQKryvos
+https://github.com/HicolasNuber/PQKryvos
 
 to be published after acceptance.
 
