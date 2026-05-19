@@ -47,15 +47,18 @@ FROM ubuntu:22.04
 
 # Minimal runtime dependencies
 RUN apt-get update && apt-get install -y \
-    nodejs \
-    npm \
+    curl \
+    ca-certificates \
     python3 \
     libgmp3-dev \
     libprocps-dev \
     libboost-all-dev \
     libssl-dev \
     libsodium-dev \
-    libsimdjson-dev
+    libsimdjson-dev && \
+    curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs && \
+    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 
 # Install snarkjs
 RUN npm install -g snarkjs

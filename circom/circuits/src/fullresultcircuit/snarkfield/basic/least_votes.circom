@@ -2,6 +2,7 @@ pragma circom 2.2.2;
 
 include "../../../crypto/commitment.circom";
 include "../../../tallying/utilities.circom";
+include "../../../utilities/listGates.circom";
 
 template testLeastVotesTally(bits,nVotes,N,n,k,comkey){
 /**
@@ -38,9 +39,9 @@ template testLeastVotesTally(bits,nVotes,N,n,k,comkey){
         for (var i=0;i<N; i++){
             var msgidx = j*N+i;
             if(msgidx < nVotes){
-            resfunc.tally[msgidx] <== message[j][i];
+            resfunc.in[msgidx] <== message[j][i];
             }
         }
     }
-    winnerIdx <== resfunc.indices;
+    winnerIdx <== resfunc.out;
 }

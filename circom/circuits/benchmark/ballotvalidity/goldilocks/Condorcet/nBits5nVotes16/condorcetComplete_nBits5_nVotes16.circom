@@ -22,7 +22,7 @@ template testMain(){
     signal input randomness[numcommitments][k][N];
     signal output commitment[numcommitments][n+1][N];
 
-    component test = computeCondorcetComplete(bitsVotes, nVotes, N, n, k, comkey);
+    component test = computeCondorcetComplete(nbits, nVotes, N, n, k, comkey);
     test.ranking <== ranking;
     test.randomness <== randomness;
     commitment <== test.commitment;

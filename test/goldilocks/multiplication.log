@@ -1,0 +1,14 @@
+template instances: 1
+non-linear constraints: 1
+linear constraints: 0
+public inputs: 0
+private inputs: 2
+public outputs: 1
+wires: 4
+labels: 4
+Written successfully: /home/nicolas/other_repos/pqkryvos/test/compilation_output_goldilocks/multiplication.r1cs
+Constraints written in: /home/nicolas/other_repos/pqkryvos/test/compilation_output_goldilocks/multiplication_constraints.json
+Written successfully: /home/nicolas/other_repos/pqkryvos/test/compilation_output_goldilocks/multiplication_cpp/multiplication.cpp and /home/nicolas/other_repos/pqkryvos/test/compilation_output_goldilocks/multiplication_cpp/multiplication.dat
+Written successfully: /home/nicolas/other_repos/pqkryvos/test/compilation_output_goldilocks/multiplication_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, Makefile and json2bin64.cpp
+Written successfully: /home/nicolas/other_repos/pqkryvos/test/compilation_output_goldilocks/multiplication_js/multiplication.wasm
+Everything went okay

@@ -1,6 +1,6 @@
 pragma circom 2.2.2;
 
-include "../../../../../src/crypto/commitment.circom";
+include "../../../../src/crypto/commitment.circom";
 
 template testMain(){
     var N=486;
