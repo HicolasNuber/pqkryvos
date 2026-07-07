@@ -61,6 +61,12 @@ From the project root:
 docker build -t pq-kryvos-container .
 ```
 
+> **Note:** The Docker image has been tested on Intel/Linux (amd64) systems. If you are building on a different architecture (e.g., Apple Silicon (arm64)), you may need to build the image using amd64 emulation: 
+> ```bash
+> $ docker build --platform linux/amd64 -t pq-kryvos-container .
+> ```
+
+
 ### 2. Run the Container
 
 To compute/verify a proof, run the container over a directory PATH that contains (subdirectories that each contain)
